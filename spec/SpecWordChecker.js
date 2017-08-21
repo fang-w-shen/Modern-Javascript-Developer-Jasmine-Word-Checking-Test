@@ -1,3 +1,5 @@
+////////////////////UNCOMMENT TO REVEAL JASMINE TESTS/////////////////////////////
+
 describe("The specification for word checking", function() {
 
   it("should have a checkWordCount function", function() {
@@ -29,7 +31,7 @@ describe("The specification for word checking", function() {
 
   it("should check for non-AlphaNumeric characters", function() {
   	let alphanumeric = "a a123987 sodfjFASFS";
-  	let non_alphanumeric ="09$28 09284 20";
+  	let non_alphanumeric ="09$*28 09284 20";
     expect(verifyAlphaNumeric(alphanumeric)).toBeTruthy();
     expect(verifyAlphaNumeric(non_alphanumeric)).toBeFalsy();
   });
