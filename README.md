@@ -29,3 +29,4 @@ Now that the test suite exists, write a simple application to implement the func
 3. There should only be alphanumeric characters in the text. No special characters like $%^&*.
 4. No duplicate words allowed.
 5. Word count should be less than 100.
+ 
