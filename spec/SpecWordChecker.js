@@ -13,7 +13,6 @@ describe("The specification for word checking", function() {
     expect(checkWordCount(morethan100words)).toBeFalsy();
   });
 
-
   it("should have a duplicateCheck function", function() {
     expect(duplicateCheck).toBeDefined();
   });
@@ -30,15 +29,13 @@ describe("The specification for word checking", function() {
   });
 
   it("should check for non-AlphaNumeric characters", function() {
-  	let alphanumeric = "a a123987 sodfjFASFS";
+  	let alphanumeric = "a a123987 soAdfj";
   	let non_alphanumeric ="09$*28 09284 20";
+    expect(alphanumeric).not.toMatch(new RegExp(/[^a-zA-Z0-9 ]/g));
     expect(verifyAlphaNumeric(alphanumeric)).toBeTruthy();
     expect(verifyAlphaNumeric(non_alphanumeric)).toBeFalsy();
   });
-  	 
-
-
-
+  	
 });
 
 

@@ -13,7 +13,6 @@ function duplicateCheck (input) {
 	let counter = 0;
 	if (arr.length > 1) {
 		arr.forEach((item,index)=>{
-			console.log("item is", item);
 			if(item===arr[index+1]) {
 				truth = false;
 				counter+=1;
